@@ -1,13 +1,14 @@
 <resources>
-    <string name="app_name">ConsoleLoc</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Consoles Retro</string>
-    <string name="nav_header_subtitle">Jogos antigos</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Configurar</string>
+    <string name="app_name">Gamerloc</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Consoles Retro</string>
+    <string name="nav_header_subtitle" translatable="false">Jogos antigos</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Configurar</string>
+    <string name="carrinho1" translatable="false">Carrinho</string>
 
-    <string name="menu_home">Principal</string>
-    <string name="menu_gallery">Galeria</string>
-    <string name="menu_slideshow">Simulados</string>
+    <string name="menu_home" translatable="false">Principal</string>
+    <string name="menu_gallery" translatable="false">Consoles</string>
+    <string name="menu_slideshow" translatable="false">Jogos</string>
 </resources>

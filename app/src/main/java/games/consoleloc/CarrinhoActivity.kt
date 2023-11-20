@@ -1,11 +1,9 @@
 package games.consoleloc
+
 import android.os.Bundle
-import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import games.consoleloc.ui.gallery.GalleryAluguelActivity
-import games.consoleloc.ui.gallery.GalleryFragment
-import games.consoleloc.ui.gallery.GalleryViewModel
+import games.consoleloc.R
 
 class CarrinhoActivity : AppCompatActivity() {
 
@@ -16,17 +14,11 @@ class CarrinhoActivity : AppCompatActivity() {
     }
 
     fun carregaCarrinho() {
+        val escolha = intent.getStringExtra("escolhaConsole")
+        val consoleAtual = findViewById<TextView>(R.id.escolhaConsoleTextView)
+        consoleAtual.text = "Você escolheu $escolha."
 
-        val escol = GalleryAluguelActivity()
-        var escolta = escol.setEscolhaConsole("")
-        carrinhoCheio(escolta.toString())
-        val consoleAtual = findViewById<TextView>(R.id.itemAdd1)
-        consoleAtual.text = "Você escolheu Play1."
-    }
-    private fun carrinhoCheio(escolhido: String) {
-
-        return println("voce add: $escolhido")
+        val escolhaConsoleTextView = findViewById<TextView>(R.id.escolhaConsoleTextView)
+        escolhaConsoleTextView.text = "Escolha do Console: $escolha"
     }
 }
-
-
